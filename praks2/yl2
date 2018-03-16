@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# kasutaja tervitus
+#
+# skripti algus
+#
+# echo "Tere User!"
+echo -n "Tere "
+echo -n `who am i | cut -c1 | tr [:lower:] [:upper:]` # l6ika esimene t2ht ja muuda suureks
+echo -n `who am i | cut -c2-` # l6ika k6ik t2hed alatest 2-st
+echo "!"
+#
+# skripti lopp
