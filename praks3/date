@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Kuup2ev
+#
+echo "Today is"
+date +"%A %B %d %Y" # V2ljastab kuup2eva
+echo " "
+cal
+#
