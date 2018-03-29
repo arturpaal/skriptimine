@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# Ylesanne 2
+#
+echo -n "Sisesta a:"
+read a
+echo -n "Sisesta b:"
+read b
+echo -n "Sisesta c:"
+read c
+x1=`echo "scale=2;($a+$b+$c)/2" | bc` #arvutab pool kolmnurga ymberm66du
+x2=`echo "scale=2;sqrt ($x1*($x1-$a)*($x1-$b)*($x1-$c))" | bc` #arvutab pindala
+echo "x=$x2"
+#
+#Skriptil6pp
