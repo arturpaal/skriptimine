@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# ylesanne2
+#
+echo -n "Sisesta a kylje v22rtus:"
+read a
+echo -n "Sisesta b kylje v22rtus:"
+read b
+ruut1=`echo "scale=2;($a^2)" | bc`
+ruut2=`echo "scale=2;($b^2)" | bc`
+ruut3=`echo "scale=2;($ruut1+$ruut2)" | bc`
+x=`echo "scale=2;sqrt ($ruut3)" | bc`
+echo "x = $x"
+#
+# Skripti l6pp
