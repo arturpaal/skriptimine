@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# Ylesanne 3
+#
+echo "Pyhap2ev0, Esmasp 1,...., Laup 6"
+echo -n "Kuna 2ra s6idad?"
+read algus
+echo -n "99p2evade arv"
+read paevad
+
+j2rel=$(($paevad % 7))
+tagasi=$(($algus + $j2rel))
+echo "Tagasi oled paeval $tagasi"
+#
+# Skripti l6pp
