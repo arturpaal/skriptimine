@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# Skripti algus
+#
+echo -n "Sisesta aluskandiku pikkus: "
+read pikkus
+echo -n "Sisesta aluskandiku laius: "
+read laius
+echo -n "Kui suuri kypsiseid kasutad(kylje cm)?: "
+read kypsis
+echo -n "Mitu kihti teete?: "
+read kiht
+echo -n "Mitu kypsist on pakis?: "
+read pakk
+echo "Poest tuleb osta" `expr $pikkus \* $laius / $kypsis \* $kypsis \* $kiht / $pakk` "pakki"
+# Skript l6ppes
