@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Ylesanne 3
+#
+echo -n `hostname` #annab hosti nime
+echo -n " at " #kirjutab at
+echo -e `uptime | cut -f1 -d","` #l6ikab v2lja vastava teksti osa uptimest
+#
+#Skripti l6pp
