@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# Ylesanne2
+#
+find /var -name \*.log 2> ./error -exec wc -l {} +| sort -rn | sort -rn | cut -f2,3,4 -d"/" | grep "var" # Otsib log failid paneb lubatud failid k2sule, mis sorteerib neid ridade j2rgi
+#
+# Skript l6ppes
