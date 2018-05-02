@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+osch=0
+echo -n "Sisesta OS1"
+read os
+echo -n "Sisesta OS2"
+read oss
+echo "1. $os"
+echo "2. $oss"
+echo -n "Select your os choice [1 or 2]? "
+read osch
+if [ $osch -eq 1 ] ; then 
+echo "You Picked up $os "
+else #### nested if i.e if within if ######
+if [ $osch -eq 2 ] ; then
+echo "You Picked up $oss "
+else echo "What you don't like About Unix/Linux OS."
+fi
+fi
+#
+#l6pp
