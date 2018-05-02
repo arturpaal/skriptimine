@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# reisibussid
+#
+echo -n "Sisesta reisijate arv: "
+read reisijad # Reisivate inimeste arv
+echo -n "Sisesta kohtade arv bussis: "
+read kohad # Vabad kohad bussis
+bussid=$(($reisijad / $kohad))
+ylej22nud=$(($reisijad % $kohad))
+if [ $ylej22nud -gt 0 ]
+then
+bussid=$(($bussid + 1))
+fi
+echo "Kokku on vaja $bussid t2isbussi"
+#
+#Skripti l6pp
