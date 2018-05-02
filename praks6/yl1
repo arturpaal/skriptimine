@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# Paaris v6i Paaritu
+#
+echo -n "Sisesta suvaline number:"
+read arv
+l6pp=$(($arv % 2)) #Jagab sisestatud arvu kahega
+if [ $l6pp -eq 0 ]
+then
+echo "$arv on paaris" #Kui arv on paaris v2ljastab selle
+else
+echo "$arv on paaritu" #Kui arv on paaritu v2ljastab selle
+fi
+#
+# Skript l6ppes
