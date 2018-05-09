@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# Ylesanne 4
+#
+echo -n "Sisesta number: "
+read number 
+i=2
+while [ $i -lt $number ]
+do
+if [ `expr $number % $i` -eq 0 ]
+then
+echo "$number -ei ole algarv"
+echo "Kuna seda saab jagada $i"
+exit
+fi
+i=`expr $i + 1`
+done
+echo "$number - on algarv"
+#
+# Skripti l6pp
