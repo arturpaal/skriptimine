@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# Skripti algus
+#
+echo -n "Sisesta ridade arv: "
+read ridadearv
+echo -n "Sisesta tärnide arv ühes reas: "
+read tarnid
+for (( i = 1; i <= ridadearv; i++ ))
+do
+echo -n "$i "
+for (( j = 1; j <= tarnid; j++ ))
+do
+echo -n "* "
+done
+echo ""
+done
+done
+#
+# Skripti lõpp
